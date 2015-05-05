@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>NWServer</title>
+	</head>
+	<body>
+		<script>
+			global = window;
+			nodeGlobal = process.mainModule.exports.nodeGlobal;
+		</script>
+		<script src="UPPERCASE.JS-COMMON.js"></script>
+		<script src="UPPERCASE.JS-BROWSER.js"></script>
+		<script>
+			console.log('WORK, WORKER!: ', nodeGlobal.CPU_CLUSTERING.getWorkerId());
+		</script>
+	</body>
+</html>
