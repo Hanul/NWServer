@@ -3,6 +3,6 @@ require('./UPPERCASE.JS-NODE.js');
 
 exports.nodeGlobal = global;
 
-CPU_CLUSTERING(function() {
-	console.log('WORK, WORKER!: ', CPU_CLUSTERING.getWorkerId());
+WEB_SERVER(8123, function(requestInfo, response, onDisconnected) {
+	response('test');
 });
